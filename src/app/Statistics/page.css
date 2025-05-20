@@ -1,0 +1,362 @@
+/* small laptop */
+
+
+/* navbar */
+
+.head
+{
+    padding: 40px 5%;
+
+}
+
+.Navbar
+{
+    display: flex;
+    padding: 23px 60px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    border-radius: 40px;
+    font-size: 15px;
+    gap: 10px;
+    font-weight: light;
+    position: fixed;
+    width: 90%;
+
+}
+
+.Navbar .left h1
+{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.Navbar .center
+{
+    display: flex;
+    margin: auto;
+    gap: 45px;
+    align-items: center;
+
+}
+
+.Navbar .center #recent
+{
+    border-bottom: 2px solid white;
+
+}
+
+.Navbar .center p
+{
+    cursor: pointer;
+    width: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    transition: 0.8s;
+
+}
+
+.Navbar .center p:hover
+{
+    transform: scale(0.96);
+    transition: all ease 0.8s;
+
+}
+
+.Navbar .center p:active
+{
+    transition: 0.8s;
+    transform: scale(0.95);
+
+}
+
+.Navbar .right
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.Navbar .right p
+{
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 7px 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.8s;
+    font-size: 16px;
+
+}
+
+.Navbar .right p:active
+{
+    color: rgba(0, 0, 0, 0.767);
+    background-color: white;
+    transition: 0.8s;
+    border: 2px solid rgba(0, 0, 0, 0.767);
+
+}
+
+.Navbar .right p:hover
+{
+    transform: scale(0.97);
+    transition: all ease 0.8s;
+
+}
+
+.statistics
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    color: white;
+    padding: 60px 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.statistics .ctn
+{
+    display: flex;
+    gap: 90px;
+
+}
+
+.statistics .ctn .left .img
+{
+    height: 410px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 310px;
+
+}
+
+.statistics .ctn .right
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.statistics .ctn .right h1
+{
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+
+.statistics .ctn .right h3
+{
+    font-size: 22px;
+
+}
+
+.statistics .ctn .right p
+{
+    font-size: 20px;
+
+}
+
+#container
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+
+}
+
+.background-img
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+
+}
+
+
+
+/* tablet desgin */
+
+.Navbar-tablet
+{
+    display: flex;
+    padding: 25px 40px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    border-radius: 40px;
+    font-size: 15px;
+    gap: 10px;
+    font-weight: light;
+    position: fixed;
+    /* z-index: 1; */
+    width: 90%;
+
+}
+
+.Navbar-tablet .left h1
+{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.Navbar-tablet .center
+{
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.Navbar-tablet .center #recent
+{
+    border-bottom: 2px solid white;
+
+}
+
+.Navbar-tablet .center p
+{
+    cursor: pointer;
+    width: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    transition: 0.8s;
+
+}
+
+.Navbar-tablet .center p:hover
+{
+    transform: scale(0.96);
+    transition: all ease 0.8s;
+
+}
+
+.Navbar-tablet .center p:active
+{
+    transition: 0.8s;
+    transform: scale(0.95);
+
+}
+
+.Navbar-tablet .right
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.Navbar-tablet .right p
+{
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 7px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.8s;
+    font-size: 16px;
+
+}
+
+.Navbar-tablet .right p:active
+{
+    color: rgba(0, 0, 0, 0.767);
+    background-color: white;
+    transition: 0.8s;
+    border: 2px solid rgba(0, 0, 0, 0.767);
+
+}
+
+.Navbar-tablet .right p:hover
+{
+    transform: scale(0.97);
+    transition: all ease 0.8s;
+
+}
+
+.statistics-tablet
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    color: white;
+    padding: 60px 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.statistics-tablet .ctn
+{
+    display: flex;
+    gap: 25px;
+
+}
+
+.statistics-tablet .ctn .left .img
+{
+    height: 50vh;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 310px;
+
+}
+
+.statistics-tablet .ctn .right
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.statistics-tablet .ctn .right h1
+{
+    font-size: 24px;
+    font-weight: bolder;
+    
+}
+
+.statistics-tablet .ctn .right h3
+{
+    font-size: 20px;
+
+}
+
+.statistics-tablet .ctn .right p
+{
+    font-size: 20px;
+
+}
+
+
+/* .container
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+
+}
+
+.background-img
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+
+} */
