@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import Navbar from '../../Components/Navbar'
 import Footer from '../../Components/Footer'
 
 const page = () => {
