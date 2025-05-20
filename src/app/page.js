@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Homepage from '../Components/Homepage'
 import Footer from '../Components/Footer'
 
