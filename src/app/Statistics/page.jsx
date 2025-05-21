@@ -7,7 +7,7 @@ import './page.css'
 import lewandowski from './Image/Lewandowski.jpg'
 import raphinha from './Image/Raphinha.jpg'
 import olmo from './Image/Olmo.jpg'
-import lamine from './Image/yamal.jpg'
+import lamine from './Image/lamine.jpeg'
 import lopez from './Image/Lopez.jpg'
 import pedri from './Image/pedri.jpg'
 import pablo from './Image/Pablo.jpg'
@@ -22,6 +22,7 @@ import araujo from './Image/Araujo.jpg'
 import inigo from './Image/inigo.jpg'
 import balde from './Image/Balde.jpg'
 import campnou from './Image/campnou.jpg'
+import tores from './Image/tores.jpg'
 
 const page = () => {
   return (
@@ -42,7 +43,7 @@ const page = () => {
                 <div className='Navbar'>
                     <div className="left">
                     <Link href='/'>
-                        <h1>Barcelona</h1>
+                        <h1>SoccerHub</h1>
                     </Link>
                     </div>
 
@@ -60,12 +61,12 @@ const page = () => {
                     </Link>
 
                     <Link href="./About">
-                    <   p>About</p>
+                    <p>About</p>
                     </Link>
                     
                     </div>
                     <div className="right">
-                    <p>Privacy Policy</p>
+                    <p>Contact Us</p>
                     </div>
                 </div>
                     
@@ -102,7 +103,7 @@ const page = () => {
 
                 <div className="ctn">
                     <div className="left">
-                        <Image className='img' src={raphinha} alt='lewandowski' />
+                        <Image className='img' src={tores} alt='lewandowski' />
                     </div>
 
                     <div className="right">
@@ -343,7 +344,7 @@ const page = () => {
                 <div className='Navbar'>
                     <div className="left">
                     <Link href='/'>
-                        <h1>Barcelona</h1>
+                        <h1>SoccerHub</h1>
                     </Link>
                     </div>
 
@@ -361,12 +362,12 @@ const page = () => {
                     </Link>
 
                     <Link href="./About">
-                    <   p>About</p>
+                    <p>About</p>
                     </Link>
                     
                     </div>
                     <div className="right">
-                    <p>Privacy Policy</p>
+                    <p>Contact Us</p>
                     </div>
                 </div>
                     
@@ -403,7 +404,7 @@ const page = () => {
 
                 <div className="ctn">
                     <div className="left">
-                        <Image className='img' src={raphinha} alt='lewandowski' />
+                        <Image className='img' src={tores} alt='lewandowski' />
                     </div>
 
                     <div className="right">
@@ -637,12 +638,12 @@ const page = () => {
                 alt='' />
             </div>
 
-            <div className='head'>
+            <div className='head-tablet'>
             
                 <div className='Navbar-tablet'>
                     <div className="left">
                     <Link href='/'>
-                        <h1>Barcelona</h1>
+                        <h1>SoccerHub</h1>
                     </Link>
                     </div>
 
@@ -660,12 +661,12 @@ const page = () => {
                     </Link>
 
                     <Link href="./About">
-                    <   p>About</p>
+                    <p>About</p>
                     </Link>
                     
                     </div>
                     <div className="right">
-                    <p>Privacy Policy</p>
+                    <p>Contact Us</p>
                     </div>
                 </div>
                     
@@ -702,7 +703,7 @@ const page = () => {
 
                 <div className="ctn">
                     <div className="left">
-                        <Image className='img' src={raphinha} alt='lewandowski' />
+                        <Image className='img' src={tores} alt='lewandowski' />
                     </div>
 
                     <div className="right">

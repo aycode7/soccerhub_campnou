@@ -48,14 +48,14 @@ const Homepage = () => {
     <div>
 
       {/* small laptop */}
-      <div className="hidden md:hidden lg:block xl:hidden">
+      <div className="hidden md:hidden lg:block xl:block">
 
         <div className='head'>
         
           <div className='Navbar'>
             <div className="left">
               <Link href='/'>
-                <h1>Barcelona</h1>
+                <h1>SoccerHub</h1>
               </Link>
             </div>
 
@@ -77,8 +77,9 @@ const Homepage = () => {
               </Link>
               
             </div>
+
             <div className="right">
-              <p>Privacy Policy</p>
+              <p>Contact Us</p>
             </div>
           </div>
             

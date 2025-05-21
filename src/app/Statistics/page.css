@@ -179,12 +179,19 @@
     left: 0;
     z-index: -1;
     height: 100%;
+    width: 100%;
 
 }
 
 
 
 /* tablet desgin */
+
+.head-tablet
+{
+    padding: 40px 5%;
+
+}
 
 .Navbar-tablet
 {
