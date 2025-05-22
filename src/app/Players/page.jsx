@@ -241,8 +241,8 @@ const page = () => {
                   <p>Defender</p>
                   <p>Striker</p>
                   <p>Defender</p>
-                  <p>Midfield</p>
-                  <p>Midfield</p>
+                  <p>Midfielder</p>
+                  <p>Midfielder</p>
                   <p>Defender</p>
                 </div>
 

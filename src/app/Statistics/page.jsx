@@ -1,6 +1,9 @@
 'use client'
 import { useState } from 'react'
 import React from 'react'
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import './page.css'
@@ -25,310 +28,17 @@ import campnou from './Image/campnou.jpg'
 import tores from './Image/tores.jpg'
 
 const page = () => {
+
+    useEffect(() => {
+        Aos.init({duration:'1000'});
+    
+    }, [])
+
   return (
     <div>
 
-        {/* big laptop */}
-        <div id='container' className='hidden md:hidden lg:hidden xl:block'>
-
-            <div className="container">
-                <Image 
-                className='background-img' 
-                src={campnou} 
-                alt='' />
-            </div>
-
-            <div className='head'>
-
-                <div className='Navbar'>
-                    <div className="left">
-                    <Link href='/'>
-                        <h1>SoccerHub</h1>
-                    </Link>
-                    </div>
-
-                    <div className="center">
-                    <Link href='/'>
-                        <p>News</p>
-                    </Link>
-
-                    <Link href='./Statistics'>
-                        <p id='recent'>Statistics</p>
-                    </Link>
-
-                    <Link href='./Players'>
-                        <p>Players</p>
-                    </Link>
-
-                    <Link href="./About">
-                    <p>About</p>
-                    </Link>
-                    
-                    </div>
-                    <div className="right">
-                    <p>Contact Us</p>
-                    </div>
-                </div>
-                    
-            </div>
-
-            <div className="statistics">
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={lewandowski} alt='lewandowski' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Robert Lewandowski</h1>
-                        <h3>Position : Striker</h3>
-                        <p>GP : 32</p>
-                        <p>⚽ : 25</p>
-                        <p>👟 : 2</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={raphinha} alt='lewandowski' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Raphinha</h1>
-                        <h3>Winger</h3>
-                        <p>GP : 34</p>
-                        <p>⚽ : 18</p>
-                        <p>👟 : 9</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={tores} alt='lewandowski' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Ferran Torres</h1>
-                        <h3>Winger</h3>
-                        <p>GP : 27</p>
-                        <p>⚽ : 10</p>
-                        <p>👟 : 6</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={olmo} alt='lewandowski' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Dani Olmo</h1>
-                        <h3>Midfielder</h3>
-                        <p>GP : 23</p>
-                        <p>⚽ : 9</p>
-                        <p>👟 : 3</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={lamine} alt='lewandowski' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Lamine Yamal</h1>
-                        <h3>Winger</h3>
-                        <p>GP : 33</p>
-                        <p>⚽ : 8</p>
-                        <p>👟 : 13</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={lopez} alt='lewandowski' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Fermin López</h1>
-                        <h3>Midfielder</h3>
-                        <p>GP : 26</p>
-                        <p>⚽ : 5</p>
-                        <p>👟 : 4</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={pedri} alt='lewandowski' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Pedri</h1>
-                        <h3>Midfielder</h3>
-                        <p>GP : 35</p>
-                        <p>⚽ : 4</p>
-                        <p>👟 : 5</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={pablo} alt='lewandowski' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Pablo Torre</h1>
-                        <h3>Midfielder</h3>
-                        <p>GP : 10</p>
-                        <p>⚽ : 3</p>
-                        <p>👟 : 1</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={kounde} alt='lewandowski' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Jules Koundè</h1>
-                        <h3>Defender</h3>
-                        <p>GP : 32</p>
-                        <p>⚽ : 2</p>
-                        <p>👟 : 3</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={eric} alt='eric' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Eric García</h1>
-                        <h3>Defender</h3>
-                        <p>GP : 27</p>
-                        <p>⚽ : 2</p>
-                        <p>👟 : 2</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={dejong} alt='eric' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Frankie De Jong</h1>
-                        <h3>Midfielder</h3>
-                        <p>GP : 24</p>
-                        <p>⚽ : 2</p>
-                        <p>👟 : 2</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={victor} alt='eric' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Pau Victor</h1>
-                        <h3>Striker</h3>
-                        <p>GP : 19</p>
-                        <p>⚽ : 2</p>
-                        <p>👟 : 1</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={gavi} alt='eric' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Gavi</h1>
-                        <h3>Midfielder</h3>
-                        <p>GP : 24</p>
-                        <p>⚽ : 1</p>
-                        <p>👟 : 1</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={gerard} alt='eric' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Gerard Martín</h1>
-                        <h3>Unknown</h3>
-                        <p>GP : 26</p>
-                        <p>⚽ : 1</p>
-                        <p>👟 : 3</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={casado} alt='eric' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Marc Casadó</h1>
-                        <h3>Unkown</h3>
-                        <p>GP : 26</p>
-                        <p>⚽ : 1</p>
-                        <p>👟 : 3</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={araujo} alt='eric' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Ronald Araújo</h1>
-                        <h3>Defender</h3>
-                        <p>GP : 11</p>
-                        <p>⚽ : 1</p>
-                        <p>👟 : 1</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={inigo} alt='eric' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Iñigo Martinez</h1>
-                        <h3>Defender</h3>
-                        <p>GP : 27</p>
-                        <p>⚽ : nill</p>
-                        <p>👟 : 4</p>
-                    </div>
-                </div>
-
-                <div className="ctn">
-                    <div className="left">
-                        <Image className='img' src={balde} alt='eric' />
-                    </div>
-
-                    <div className="right">
-                        <h1>Alejandro Balde</h1>
-                        <h3>Defender</h3>
-                        <p>GP : 30</p>
-                        <p>⚽ : nill</p>
-                        <p>👟 : 4</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         {/* small laptop */}
-        <div id='content' className='hidden md:hidden lg:block xl:hidden'>
+        <div id='content' className='hidden md:hidden lg:block xl:block'>
 
             <div className="container">
                 <Image
@@ -375,11 +85,11 @@ const page = () => {
 
             <div className="statistics">
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={lewandowski} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Robert Lewandowski</h1>
                         <h3>Position : Striker</h3>
                         <p>GP : 32</p>
@@ -389,11 +99,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={raphinha} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Raphinha</h1>
                         <h3>Winger</h3>
                         <p>GP : 34</p>
@@ -403,11 +113,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={tores} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Ferran Torres</h1>
                         <h3>Winger</h3>
                         <p>GP : 27</p>
@@ -417,11 +127,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={olmo} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Dani Olmo</h1>
                         <h3>Midfielder</h3>
                         <p>GP : 23</p>
@@ -431,11 +141,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={lamine} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Lamine Yamal</h1>
                         <h3>Winger</h3>
                         <p>GP : 33</p>
@@ -444,12 +154,12 @@ const page = () => {
                     </div>
                 </div>
 
-                <div className="ctn">
-                    <div className="left">
+                 <div className="ctn">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={lopez} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Fermin López</h1>
                         <h3>Midfielder</h3>
                         <p>GP : 26</p>
@@ -459,11 +169,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={pedri} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Pedri</h1>
                         <h3>Midfielder</h3>
                         <p>GP : 35</p>
@@ -473,11 +183,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={pablo} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Pablo Torre</h1>
                         <h3>Midfielder</h3>
                         <p>GP : 10</p>
@@ -487,11 +197,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={kounde} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Jules Koundè</h1>
                         <h3>Defender</h3>
                         <p>GP : 32</p>
@@ -501,11 +211,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={eric} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Eric García</h1>
                         <h3>Defender</h3>
                         <p>GP : 27</p>
@@ -515,11 +225,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={dejong} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Frankie De Jong</h1>
                         <h3>Midfielder</h3>
                         <p>GP : 24</p>
@@ -529,11 +239,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={victor} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Pau Victor</h1>
                         <h3>Striker</h3>
                         <p>GP : 19</p>
@@ -543,11 +253,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={gavi} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Gavi</h1>
                         <h3>Midfielder</h3>
                         <p>GP : 24</p>
@@ -557,13 +267,13 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={gerard} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Gerard Martín</h1>
-                        <h3>Unknown</h3>
+                        <h3>Defender</h3>
                         <p>GP : 26</p>
                         <p>⚽ : 1</p>
                         <p>👟 : 3</p>
@@ -571,13 +281,13 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={casado} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Marc Casadó</h1>
-                        <h3>Unkown</h3>
+                        <h3>Midfielder</h3>
                         <p>GP : 26</p>
                         <p>⚽ : 1</p>
                         <p>👟 : 3</p>
@@ -585,11 +295,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={araujo} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Ronald Araújo</h1>
                         <h3>Defender</h3>
                         <p>GP : 11</p>
@@ -599,11 +309,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={inigo} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Iñigo Martinez</h1>
                         <h3>Defender</h3>
                         <p>GP : 27</p>
@@ -613,11 +323,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={balde} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Alejandro Balde</h1>
                         <h3>Defender</h3>
                         <p>GP : 30</p>
@@ -674,11 +384,11 @@ const page = () => {
 
             <div className="statistics-tablet">
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={lewandowski} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Robert Lewandowski</h1>
                         <h3>Position : Striker</h3>
                         <p>GP : 32</p>
@@ -692,7 +402,7 @@ const page = () => {
                         <Image className='img' src={raphinha} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Raphinha</h1>
                         <h3>Winger</h3>
                         <p>GP : 34</p>
@@ -703,10 +413,10 @@ const page = () => {
 
                 <div className="ctn">
                     <div className="left">
-                        <Image className='img' src={tores} alt='lewandowski' />
+                        <Image className='img' src={tores} alt='lewandowski' data-aos="fade-right" />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Ferran Torres</h1>
                         <h3>Winger</h3>
                         <p>GP : 27</p>
@@ -716,11 +426,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={olmo} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Dani Olmo</h1>
                         <h3>Midfielder</h3>
                         <p>GP : 23</p>
@@ -730,11 +440,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={lamine} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Lamine Yamal</h1>
                         <h3>Winger</h3>
                         <p>GP : 33</p>
@@ -744,11 +454,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={lopez} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Fermin López</h1>
                         <h3>Midfielder</h3>
                         <p>GP : 26</p>
@@ -758,11 +468,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={pedri} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Pedri</h1>
                         <h3>Midfielder</h3>
                         <p>GP : 35</p>
@@ -772,11 +482,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={pablo} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Pablo Torre</h1>
                         <h3>Midfielder</h3>
                         <p>GP : 10</p>
@@ -786,11 +496,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={kounde} alt='lewandowski' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Jules Koundè</h1>
                         <h3>Defender</h3>
                         <p>GP : 32</p>
@@ -800,11 +510,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={eric} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Eric García</h1>
                         <h3>Defender</h3>
                         <p>GP : 27</p>
@@ -814,11 +524,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={dejong} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Frankie De Jong</h1>
                         <h3>Midfielder</h3>
                         <p>GP : 24</p>
@@ -828,11 +538,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={victor} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Pau Victor</h1>
                         <h3>Striker</h3>
                         <p>GP : 19</p>
@@ -842,11 +552,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={gavi} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Gavi</h1>
                         <h3>Midfielder</h3>
                         <p>GP : 24</p>
@@ -856,13 +566,13 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={gerard} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Gerard Martín</h1>
-                        <h3>Unknown</h3>
+                        <h3>Defender</h3>
                         <p>GP : 26</p>
                         <p>⚽ : 1</p>
                         <p>👟 : 3</p>
@@ -870,13 +580,13 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={casado} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Marc Casadó</h1>
-                        <h3>Unkown</h3>
+                        <h3>Midfielder</h3>
                         <p>GP : 26</p>
                         <p>⚽ : 1</p>
                         <p>👟 : 3</p>
@@ -884,11 +594,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={araujo} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Ronald Araújo</h1>
                         <h3>Defender</h3>
                         <p>GP : 11</p>
@@ -898,11 +608,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={inigo} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Iñigo Martinez</h1>
                         <h3>Defender</h3>
                         <p>GP : 27</p>
@@ -912,11 +622,11 @@ const page = () => {
                 </div>
 
                 <div className="ctn">
-                    <div className="left">
+                    <div className="left" data-aos="fade-right">
                         <Image className='img' src={balde} alt='eric' />
                     </div>
 
-                    <div className="right">
+                    <div className="right" data-aos="fade-left">
                         <h1>Alejandro Balde</h1>
                         <h3>Defender</h3>
                         <p>GP : 30</p>

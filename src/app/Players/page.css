@@ -2,7 +2,7 @@
 
 .head
 {
-    padding: 40px 5%;
+    padding: 40px 3%;
 
 }
 
@@ -24,7 +24,7 @@ body
     gap: 10px;
     font-weight: light;
     position: fixed;
-    width: 90%;
+    width: 94%;
 
 }
 
@@ -387,7 +387,7 @@ body
 
 .head-tablet
 {
-    padding: 40px 5%;
+    padding: 40px 3%;
 
 }
 
@@ -404,7 +404,7 @@ body
     font-weight: light;
     position: fixed;
     /* z-index: 1; */
-    width: 90%;
+    width: 94%;
 
 }
 
